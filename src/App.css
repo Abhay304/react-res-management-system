@@ -1,38 +1,297 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Poppins&family=Potta+One&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  -webkit-appearance: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a,
+button,
+input,
+textarea {
+  -webkit-appearance: none;
+  outline: none;
+  border: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a,
+button {
+  cursor: pointer;
+}
+
+hr {
+  border-top: 1px solid #eae6e6;
+  margin-top: 8px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  width: 100%;
+  height: 220px;
+  padding: 40px 100px;
+  background: #fc9726;
+}
+
+.header__logo {
+  display: inline-block;
+  width: 60%;
+}
+
+.header__logo .logo {
+  width: 156px;
+  position: absolute;
+  z-index: 1;
+  left: 70px;
+  top: 32px;
+  opacity: 0.8;
+}
+
+.header__nav__block {
+  display: block;
+  float: right;
+  width: 40%;
+}
+
+.header__nav__block ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.header__nav__block ul li {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #3c3131;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header__nav__block ul li:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
+
+.app__wrapper {
+  width: 100%;
+  position: absolute;
+  top: 60%;
+}
+
+.app__inner__wrapper {
+  width: 80%;
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16);
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 40px;
+  opacity: 0.8;
+}
+
+.app__inner__wrapper .app__inner__title {
+  font-family: "Poppins", sans-serif;
+  color: rgba(3, 3, 3, 0.5);
+}
+
+.app__inner__wrapper .app__inner__title p:nth-child(1) {
+  display: inline-block;
+  font-size: 28px;
+}
+
+.app__inner__wrapper .app__inner__title p:nth-child(2) {
+  float: right;
+  font-size: 24px;
+}
+
+.app__inner__wrapper .app__menu__wrapper {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  width: 50%;
+  font-weight: 600;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app__inner__wrapper .app__menu__wrapper-active {
+  position: relative;
+  text-align: center;
+  color: #1b6cf9;
+}
+
+.app__inner__wrapper .app__menu__wrapper-active::after {
+  content: "";
+  top: 120%;
+  height: 4px;
+  width: 120%;
+  background-color: #1b6cf9;
+  position: absolute;
+  right: 10%;
+}
+
+.app__inner__wrapper .app__menu__wrapper span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 35%;
+}
+
+.app__inner__wrapper .app__menu__wrapper span img {
+  width: 40px;
+  height: 30px;
+}
+
+.app__inner__wrapper .app__food__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app__inner__wrapper .app__food__wrapper .app__food__block {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+}
+
+.app__inner__wrapper .app__food__wrapper .app__food__block .food__card {
+  font-family: "Poppins", sans-serif;
+  height: inherit;
+  width: 110px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-box-shadow: -19px 0px 20px 8px rgba(0, 0, 0, 0.16);
+          box-shadow: -19px 0px 20px 8px rgba(0, 0, 0, 0.16);
+  background: #F1F2EF;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.app__inner__wrapper .app__food__wrapper .app__food__block .food__card p {
+  float: right;
+  font-size: 18px;
+}
+
+.app__inner__wrapper .app__food__wrapper .app__food__block .food__card img {
+  width: 60%;
+  height: 60%;
+}
+
+.app__inner__wrapper .app__food__wrapper .app__food__block .food__card:hover {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+  opacity: 0.7;
+}
+
+.app__inner__wrapper .app__food__wrapper .app__payment__block {
+  margin-top: 10px;
+  width: 25%;
+  padding: 20px;
+  border: 0.8px solid #f1f1f1;
+  position: relative;
+}
+
+.app__inner__wrapper .app__food__wrapper .app__payment__block .payments {
+  list-style: none;
+}
+
+.app__inner__wrapper .app__food__wrapper .app__payment__block .payments li {
+  background-color: #F1F2EF;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: #3c3131;
+  font-family: "Poppins", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.app__inner__wrapper .app__food__wrapper .app__payment__block .payments li .delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 25%;
+  right: -21px;
+}
+
+.app__inner__wrapper .app__food__wrapper .app__payment__block .payments li:hover .delete-btn {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.app__inner__wrapper .app__food__wrapper .app__payment__block p {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.app__inner__wrapper .app__food__wrapper .app__payment__block .total-amt {
+  margin-bottom: 150px;
+}
+
+.app__inner__wrapper .app__food__wrapper .app__payment__block .pay-btn {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  width: 90%;
+  height: 50px;
+  padding: 15px;
+  background-color: #fc9726;
+  -webkit-box-shadow: -2px 6px 20px 1px #fc9726;
+          box-shadow: -2px 6px 20px 1px #fc9726;
+  color: #ffffff;
+}
+
+.app__inner__wrapper .app__food__wrapper .app__payment__block .pay-btn:hover, .app__inner__wrapper .app__food__wrapper .app__payment__block .pay-btn:active {
+  background-color: #ee8111;
+}
+/*# sourceMappingURL=style.css.map */
