@@ -1,3 +1,3 @@
 export const paymentState = {
-  paymentSummary: [],
+  paymentSummary: JSON.parse(localStorage.getItem("SateJson")) || [],
 };
