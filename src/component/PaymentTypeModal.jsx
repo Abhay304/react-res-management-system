@@ -5,8 +5,7 @@ import cash from "../assests/cash.svg";
 import paytm from "../assests/paytm-logo.svg";
 
 function PaymentTypeModal(props) {
-  // console.log(summary);
-  // console.log(toggleModal);
+  const { summary, toggleModal } = props;
   const [closePaymentModal, setclosePaymentModal] = useState(true);
 
   const closeModal = () => {
@@ -18,7 +17,7 @@ function PaymentTypeModal(props) {
       {closePaymentModal && (
         <div className="modal__wrraper">
           <div className="modal__inner__wrraper">
-            <span className="close-btn" onClick={props.toggle}>
+            <span className="close-btn" onClick={toggleModal}>
               X
             </span>
             <p className="modal__title">Payment Done Using</p>

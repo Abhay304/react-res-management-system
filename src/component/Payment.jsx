@@ -38,9 +38,6 @@ function Payment(props) {
     setOpenPaymentModal(!openPaymentModal);
   }
 
-  function alertfn() {
-    alert("Hello");
-  }
   return (
     <div className="app__payment__block">
       <p>PAYMENT DETAILS</p>
@@ -67,7 +64,7 @@ function Payment(props) {
         SUBMIT
       </button>
       {openPaymentModal && (
-        <PaymentTypeModal toggle={toggleModal} summary={paymentSum} />
+        <PaymentTypeModal toggleModal={toggleModal} summary={paymentSum} />
       )}
     </div>
   );
