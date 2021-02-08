@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { delItem } from "../redux/paymentDetails/actionCreator";
+import PaymentTypeModal from "./PaymentTypeModal";
 function Payment(props) {
   const [paymentSum, setPaymentSummary] = useState([]);
   useEffect(() => {
@@ -55,6 +56,7 @@ function Payment(props) {
         ${paymentSum.reduce((total, num) => total + num.amount, 0)}
       </p>
       <button className="pay-btn">SUBMIT</button>
+      <PaymentTypeModal />
     </div>
   );
 }
