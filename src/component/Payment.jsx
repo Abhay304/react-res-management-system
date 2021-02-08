@@ -4,6 +4,7 @@ import { delItem } from "../redux/paymentDetails/actionCreator";
 import PaymentTypeModal from "./PaymentTypeModal";
 function Payment(props) {
   const [paymentSum, setPaymentSummary] = useState([]);
+  const [openPaymentModal, setOpenPaymentModal] = useState(false);
   useEffect(() => {
     localStorage.setItem("SateJson", JSON.stringify(props.paymentSummary));
     let uniqueItems = [];
@@ -33,6 +34,10 @@ function Payment(props) {
     props.delItem(item.name);
   };
 
+  function toggleModal() {
+    setOpenPaymentModal(!openPaymentModal);
+  }
+
   return (
     <div className="app__payment__block">
       <p>PAYMENT DETAILS</p>
@@ -55,8 +60,12 @@ function Payment(props) {
       <p className="total-amt">
         ${paymentSum.reduce((total, num) => total + num.amount, 0)}
       </p>
-      <button className="pay-btn">SUBMIT</button>
-      <PaymentTypeModal />
+      <button className="pay-btn" onClick={toggleModal}>
+        SUBMIT
+      </button>
+      {openPaymentModal && (
+        <PaymentTypeModal toggleModal={toggleModal} summary={paymentSum} />
+      )}
     </div>
   );
 }
