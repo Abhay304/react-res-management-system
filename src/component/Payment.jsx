@@ -5,7 +5,9 @@ import PaymentTypeModal from "./PaymentTypeModal";
 function Payment(props) {
   const [paymentSum, setPaymentSummary] = useState([]);
   const [openPaymentModal, setOpenPaymentModal] = useState(false);
+  const [disablebtn, setbutton] = useState(true);
   useEffect(() => {
+    Boolean(props.paymentSummary.length) ? setbutton(false) : setbutton(true);
     localStorage.setItem("SateJson", JSON.stringify(props.paymentSummary));
     let uniqueItems = [];
     let foodState = props.paymentSummary;
@@ -60,7 +62,7 @@ function Payment(props) {
       <p className="total-amt">
         ${paymentSum.reduce((total, num) => total + num.amount, 0)}
       </p>
-      <button className="pay-btn" onClick={toggleModal}>
+      <button className="pay-btn" onClick={toggleModal} disabled={disablebtn}>
         SUBMIT
       </button>
       {openPaymentModal && (
@@ -70,10 +72,6 @@ function Payment(props) {
   );
 }
 const mapSatetoProps = (state) => {
-  // console.log(state.payDetails.paymentSummary);
-  //paydetails is referencing PaymentDetatils Sate
-  //paymentSummary is the name the of the object of the state
-
   return {
     paymentSummary: state.payDetails.paymentSummary,
   };

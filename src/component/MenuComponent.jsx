@@ -1,16 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { connect } from "react-redux";
 import NonVegComponent from "./NonVegComponent";
 import VegComponent from "./VegComponent";
 import vegLogo from "../assests/lettuce.svg";
 import nonVegLogo from "../assests/nonVeg.svg";
 import Payment from "./Payment";
-function MenuComponent() {
+function MenuComponent(props) {
   const [foodType, setFoodType] = useState("nonVeg");
-
+  console.log(props.totalAmount);
   const setFood = (e) => {
     let foodType = e.target.attributes[0].value;
     setFoodType(foodType);
   };
+
+  useEffect(() => {
+    props.totalAmount.forEach((elem) => console.log(elem));
+  }, [props]);
+
   return (
     <div className="app__wrapper">
       <div className="app__inner__wrapper">
@@ -52,5 +58,9 @@ function MenuComponent() {
     </div>
   );
 }
-
-export default MenuComponent;
+const mapSatetoProps = (state) => {
+  return {
+    totalAmount: state.historyDetails.totalAmount,
+  };
+};
+export default connect(mapSatetoProps, null)(React.memo(MenuComponent));
