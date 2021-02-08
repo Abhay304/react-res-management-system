@@ -11,7 +11,6 @@ function VegComponent(props) {
   }, [props]);
 
   const senditem = (item) => {
-    console.log(item);
     let itemObj = { amount: item.amount, name: item.name, plate: 1 };
     props.addItem(itemObj);
   };

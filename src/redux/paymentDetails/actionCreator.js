@@ -1,4 +1,4 @@
-import { ADD_ITEM, DEL_ITEM } from "./typeofAction";
+import { ADD_ITEM, DEL_ITEM, CLEAR_ITEM } from "./typeofAction";
 
 export const addItem = (data) => {
   return {
@@ -13,5 +13,12 @@ export const delItem = (data) => {
     type: DEL_ITEM,
     info: "Items removed",
     payload: data,
+  };
+};
+
+export const clearItem = () => {
+  return {
+    type: CLEAR_ITEM,
+    info: "Items Cleared",
   };
 };
