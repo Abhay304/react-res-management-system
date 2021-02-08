@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
+import { delItem } from "../redux/paymentDetails/actionCreator";
 function Payment(props) {
   const [paymentSum, setPaymentSummary] = useState([]);
   useEffect(() => {
+    localStorage.setItem("SateJson", JSON.stringify(props.paymentSummary));
     let uniqueItems = [];
     let foodState = props.paymentSummary;
     let computedItems = foodState.map((list) => {
@@ -27,7 +29,7 @@ function Payment(props) {
   }, [props]);
 
   const deleteData = (item) => {
-    console.log(item);
+    props.delItem(item.name);
   };
 
   return (
@@ -65,4 +67,11 @@ const mapSatetoProps = (state) => {
     paymentSummary: state.payDetails.paymentSummary,
   };
 };
-export default connect(mapSatetoProps)(React.memo(Payment));
+
+const mapDispatchToProp = (dispatch) => {
+  return {
+    delItem: (itemObj) => dispatch(delItem(itemObj)),
+  };
+};
+
+export default connect(mapSatetoProps, mapDispatchToProp)(React.memo(Payment));
