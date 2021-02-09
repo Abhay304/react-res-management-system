@@ -22,6 +22,7 @@ textarea {
   -webkit-appearance: none;
   outline: none;
   border: 0;
+  text-decoration: none;
 }
 
 a,
@@ -93,7 +94,7 @@ body {
           justify-content: space-between;
 }
 
-.header__nav__block ul li {
+.header__nav__block ul li ,.header__nav__block ul li a {
   cursor: pointer;
   font-size: 24px;
   font-weight: bold;

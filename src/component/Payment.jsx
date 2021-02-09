@@ -8,7 +8,7 @@ function Payment(props) {
   const [disablebtn, setbutton] = useState(true);
   useEffect(() => {
     Boolean(props.paymentSummary.length) ? setbutton(false) : setbutton(true);
-    localStorage.setItem("SateJson", JSON.stringify(props.paymentSummary));
+    localStorage.setItem("paymentJson", JSON.stringify(props.paymentSummary));
     let uniqueItems = [];
     let foodState = props.paymentSummary;
     let computedItems = foodState.map((list) => {

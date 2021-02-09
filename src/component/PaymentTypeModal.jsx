@@ -16,7 +16,6 @@ function PaymentTypeModal(props) {
       erroRef.current.innerText = "Kindly Select Payment Type  to Continue";
       return null;
     }
-    console.log("Submitting Data With Payment Type");
     erroRef.current.innerText = "";
     const dateTimeStamp = new Date().toLocaleString();
     let paymentHistoryobj = {

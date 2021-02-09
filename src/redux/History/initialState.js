@@ -1,5 +1,4 @@
 export const historyState = {
-  paymentHistory: [],
-  totalAmount: [],
-  computedAmount: [],
+  paymentHistory: JSON.parse(localStorage.getItem("historyJson")) || [],
+  totalAmount: JSON.parse(localStorage.getItem("totalAmount")) || [],
 };
