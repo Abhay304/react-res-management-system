@@ -7,14 +7,24 @@ import nonVegLogo from "../assests/nonVeg.svg";
 import Payment from "./Payment";
 function MenuComponent(props) {
   const [foodType, setFoodType] = useState("nonVeg");
-  console.log(props.totalAmount);
+  const [totalAmount, setAmount] = useState([]);
   const setFood = (e) => {
     let foodType = e.target.attributes[0].value;
     setFoodType(foodType);
   };
 
   useEffect(() => {
-    props.totalAmount.forEach((elem) => console.log(elem));
+    let finalAmountArr = [];
+    for (let i = 0; i < props.totalAmount.length; i++) {
+      if (props.totalAmount[i].length > 0) {
+        for (let j = 0; j < props.totalAmount[i].length; j++) {
+          finalAmountArr.push(props.totalAmount[i][j]);
+        }
+      } else {
+        finalAmountArr.push(props.totalAmount[i]);
+      }
+    }
+    setAmount(finalAmountArr);
   }, [props]);
 
   return (
@@ -22,7 +32,7 @@ function MenuComponent(props) {
       <div className="app__inner__wrapper">
         <div className="app__inner__title">
           <p>Menu</p>
-          <p>Earned :$450</p>
+          <p>Earned :${totalAmount.reduce((total, num) => total + num, 0)}</p>
         </div>
 
         <div className="app__menu__wrapper">
