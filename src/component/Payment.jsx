@@ -10,6 +10,7 @@ function Payment(props) {
     Boolean(props.paymentSummary.length) ? setbutton(false) : setbutton(true);
     localStorage.setItem("paymentJson", JSON.stringify(props.paymentSummary));
     let uniqueItems = [];
+
     let foodState = props.paymentSummary;
     let computedItems = foodState.map((list) => {
       let count = 0;

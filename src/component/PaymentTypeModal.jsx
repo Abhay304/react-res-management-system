@@ -47,7 +47,7 @@ function PaymentTypeModal(props) {
               value="Cash"
             ></input>
             <label htmlFor="cash">
-              <img src={cash}></img>
+              <img src={cash} alt="cash-logo"></img>
             </label>
           </div>
           <div className="payment__type">
@@ -58,7 +58,7 @@ function PaymentTypeModal(props) {
               value="Phone Pe"
             ></input>
             <label htmlFor="phonePe">
-              <img src={phonePe}></img>
+              <img src={phonePe} alt="phonePe-logo"></img>
             </label>
           </div>
           <div className="payment__type">
@@ -69,7 +69,7 @@ function PaymentTypeModal(props) {
               value="Google Pay"
             ></input>
             <label htmlFor="googlePay">
-              <img src={gPay}></img>
+              <img src={gPay} alt="Gpay-logo"></img>
             </label>
           </div>
 
@@ -81,7 +81,7 @@ function PaymentTypeModal(props) {
               value="Paytm"
             ></input>
             <label htmlFor="Paytm">
-              <img src={paytm}></img>
+              <img src={paytm} alt="Paytm-logo"></img>
             </label>
           </div>
         </div>
@@ -101,6 +101,6 @@ const mapDispatchToProp = (dispatch) => {
   };
 };
 
-export default connect(null, mapDispatchToProp)(PaymentTypeModal);
+export default connect(null, mapDispatchToProp)(React.memo(PaymentTypeModal));
 
 // export default PaymentTypeModal;

@@ -9,9 +9,9 @@ function Headers() {
       <div className="header__wrapper">
         <div className="header__inner__wrapper">
           <div className="header__logo">
-            <a>
+            <button>
               <img className="logo" src={appLogo} alt="res-logo"></img>
-            </a>
+            </button>
           </div>
           <div className="header__nav__block">
             <ul>
@@ -38,4 +38,4 @@ function Headers() {
   );
 }
 
-export default Headers;
+export default React.memo(Headers);

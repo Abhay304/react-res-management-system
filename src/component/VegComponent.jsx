@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import momo from "../assests/momo.svg";
+import momo from "../assests/noodles.svg";
 import { foodState } from "../foodList";
 import { addItem } from "../redux/paymentDetails/actionCreator";
 import { connect } from "react-redux";
@@ -40,5 +40,5 @@ const mapDispatchToProp = (dispatch) => {
   };
 };
 
-export default connect(null, mapDispatchToProp)(VegComponent);
+export default connect(null, mapDispatchToProp)(React.memo(VegComponent));
 // export default VegComponent;

@@ -10,7 +10,7 @@ const paymentReducer = (state = paymentState, action) => {
     case DEL_ITEM:
       return {
         paymentSummary: state.paymentSummary.filter(
-          (details) => details.name != action.payload
+          (details) => details.name !== action.payload
         ),
       };
     case CLEAR_ITEM:

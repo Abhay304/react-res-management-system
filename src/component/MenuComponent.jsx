@@ -33,7 +33,7 @@ function MenuComponent(props) {
             <a onClick={setFood} food-type="nonVeg">
               Non-Veg
             </a>
-            <img src={nonVegLogo}></img>
+            <img src={nonVegLogo} alt="nonVeg-logo"></img>
           </span>
           <span
             className={
@@ -43,7 +43,7 @@ function MenuComponent(props) {
             <a onClick={setFood} food-type="Veg">
               Veg
             </a>
-            <img src={vegLogo}></img>
+            <img src={vegLogo} alt="veg-Logo"></img>
           </span>
         </div>
 
