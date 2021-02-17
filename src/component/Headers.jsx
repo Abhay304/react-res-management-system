@@ -19,10 +19,10 @@ function Headers() {
           <div className="header__nav__block">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="react-res-management-system/">Home</Link>
               </li>
               <li>
-                <Link to="/history">History</Link>
+                <Link to="react-res-management-system/history">History</Link>
               </li>
               <li onClick={print}>
                 Print
