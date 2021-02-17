@@ -1,6 +1,6 @@
 import React from "react";
 import appLogo from "../assests/cutlery.svg";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Switch, Link } from "react-router-dom";
 import History from "./History";
 import MenuComponent from "./MenuComponent";
 function Headers() {
@@ -19,10 +19,10 @@ function Headers() {
           <div className="header__nav__block">
             <ul>
               <li>
-                <Link to="/react-res-management-system/">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/react-res-management-system/history">History</Link>
+                <Link to="/history">History</Link>
               </li>
               <li onClick={print}>
                 Print
