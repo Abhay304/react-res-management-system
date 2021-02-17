@@ -1,6 +1,6 @@
 import React from "react";
 import appLogo from "../assests/cutlery.svg";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Switch, Link } from "react-router-dom";
 import History from "./History";
 import MenuComponent from "./MenuComponent";
 function Headers() {
