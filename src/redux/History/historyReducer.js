@@ -7,7 +7,7 @@ const historyReducer = (state = historyState, action) => {
       return {
         paymentHistory: [...state.paymentHistory, action.payload],
         totalAmount: state.totalAmount.concat(
-          action.payload.summary.map((elem) => elem.amount)
+          action.payload.map((elem) => elem.amount)
         ),
       };
     default:

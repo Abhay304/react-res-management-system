@@ -9,6 +9,7 @@ import paytm from "../assests/paytm-logo.svg";
 
 function PaymentTypeModal(props) {
   const { summary, toggleModal } = props;
+
   const [paymentType, setPaymentType] = useState("");
   const erroRef = React.useRef();
   const submitWithPayment = () => {
@@ -18,12 +19,12 @@ function PaymentTypeModal(props) {
     }
     erroRef.current.innerText = "";
     const dateTimeStamp = new Date().toLocaleString();
-    let paymentHistoryobj = {
-      summary,
-      paymentType,
-      dateTimeStamp,
-    };
-    props.addpayment(paymentHistoryobj);
+    summary.map((data) => {
+      data.paymentType = paymentType;
+      data.dateTime = dateTimeStamp;
+    });
+    console.log(summary);
+    props.addpayment(summary);
     props.clearItem();
     toggleModal();
   };

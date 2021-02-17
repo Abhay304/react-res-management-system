@@ -40,14 +40,13 @@ function Payment(props) {
   function toggleModal() {
     setOpenPaymentModal(!openPaymentModal);
   }
-
   return (
     <div className="app__payment__block">
       <p>PAYMENT DETAILS</p>
       <ul className="payments">
         {paymentSum.map((item, index) => (
           <li key={index}>
-            {item.name}
+            <span>{item.name}</span>
             <span>${item.amount}</span>
             <span>{item.plate}</span>
             <button

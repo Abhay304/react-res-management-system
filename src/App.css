@@ -410,3 +410,66 @@ button[disabled]{
   background-color: #fc972645 !important;
   box-shadow:unset !important;
 }
+
+/* Table Css Not built from sass*/
+
+.history-table-block{
+  display: flex;
+  justify-content: center;
+}
+
+.payment-history-table {
+  border-collapse: collapse;
+  width: 80%;
+  position: absolute;
+  top: 70%;
+}
+.filter-history-table{
+  position: absolute;
+  top: 45%;
+  right: 10%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #9c9c4b;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.filter-history-table::before{
+  content: '';
+  background: url('./assests/search.svg');
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+
+.search-logo{
+  position: absolute;
+  top: 53%;
+  right: 11%;
+}
+.search-logo:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.payment-history-table td, .payment-history-table th {
+  /* border: 1px solid #ddd; */
+  padding: 16px ;
+  text-align: center;
+}
+
+.payment-history-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.payment-history-table tr:hover {background-color: #ddd;}
+
+.payment-history-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background: #fc9726;
+  color: white;
+  text-align: center;
+}
