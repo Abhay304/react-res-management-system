@@ -23,7 +23,7 @@ function History(props) {
     <div className="history-table-block">
       <input
         type="text"
-        placeholder="mm/dd/yyy"
+        placeholder="dd/mm/yyy"
         className="filter-history-table"
         value={searchVal}
         onChange={(e) => setSearchVal(e.target.value)}
