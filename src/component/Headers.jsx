@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import History from "./History";
 import MenuComponent from "./MenuComponent";
 function Headers() {
+  const print = () => {
+    window.print();
+  };
   return (
     <Router>
       <div className="header__wrapper">
@@ -21,8 +24,8 @@ function Headers() {
               <li>
                 <Link to="/history">History</Link>
               </li>
-              <li>
-                Abhay
+              <li onClick={print}>
+                Print
                 <i className="fa fa-angle-down" aria-hidden="true"></i>
               </li>
               <li>Logout</li>
