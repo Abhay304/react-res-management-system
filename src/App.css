@@ -473,3 +473,38 @@ button[disabled]{
   color: white;
   text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+
+  .header__nav__block{
+    display: contents;
+  }
+
+  .app__food__wrapper{
+    flex-direction: column;
+  }
+  .app__food__block{
+    width: 100% !important;
+  }
+
+  .app__payment__block{
+    width: 100% !important;
+  }
+  .app__inner__wrapper .app__menu__wrapper{
+    margin-top: 10px;
+    width: 100% !important;
+  }
+  .food__card{
+    width: 118px !important;
+  }
+  .header__logo .logo {
+    width: 81px;
+    left: 11px;
+  }
+  .app__inner__wrapper{
+    padding: 25px !important;
+  }
+  .header__nav__block ul li, .header__nav__block ul li a{
+    font-size: 18px;
+  }
+}
