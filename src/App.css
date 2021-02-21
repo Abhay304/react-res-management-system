@@ -39,6 +39,9 @@ hr {
   margin-top: 8px;
 }
 
+.hide{
+  display: none;
+}
 
 *,
 *:before,
@@ -70,7 +73,6 @@ body {
 
 .header__logo {
   display: inline-block;
-  width: 60%;
 }
 
 .header__logo .logo {
@@ -85,7 +87,7 @@ body {
 .header__nav__block {
   display: block;
   float: right;
-  width: 40%;
+  width: 50%;
 }
 
 .header__nav__block ul {
@@ -176,7 +178,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  width: 35%;
 }
 
 .app__inner__wrapper .app__menu__wrapper span img {
@@ -475,12 +476,72 @@ button[disabled]{
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+.header__nav__block_mobile {
+  height: 100%;
+  width: 60%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #ececec;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+}
 
-  .header__nav__block{
+.header__nav__block_mobile a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #81776d;;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-align: center;
+}
+
+
+.header__nav__block_mobile .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.open-mobile-nav {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 880px) {
+  .header__nav__block {
     display: contents;
   }
+  .header__logo .logo {
+    width: 81px;
+    left: 11px;
+  }
+}
 
+@media screen and (min-width: 880px) {
+.header__nav__block_mobile{
+  display: none;
+}
+}
+@media screen and (max-width: 600px) {
+
+  .open-mobile-nav {
+    display: block;
+  }
+  .header__nav__block {
+    display: none;
+  }
   .app__food__wrapper{
     flex-direction: column;
   }
@@ -498,14 +559,14 @@ button[disabled]{
   .food__card{
     width: 118px !important;
   }
-  .header__logo .logo {
-    width: 81px;
-    left: 11px;
-  }
+
   .app__inner__wrapper{
     padding: 25px !important;
   }
   .header__nav__block ul li, .header__nav__block ul li a{
     font-size: 18px;
+  }
+  .payment-history-table td, .payment-history-table th {
+    padding: 14px 0px;
   }
 }

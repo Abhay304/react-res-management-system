@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import appLogo from "../assests/cutlery.svg";
 import { HashRouter as Router, Route, Switch, Link } from "react-router-dom";
 import History from "./History";
 import MenuComponent from "./MenuComponent";
+
 function Headers() {
+  const [mobileNav, setmobileNav] = useState(false);
   const print = () => {
     window.print();
   };
@@ -30,6 +32,22 @@ function Headers() {
               </li>
               <li>Logout</li>
             </ul>
+          </div>
+          <span className="open-mobile-nav" onClick={() => setmobileNav(true)}>
+            &#9776; open
+          </span>
+          <div className={mobileNav ? "header__nav__block_mobile" : "hide"}>
+            <a className="closebtn" onClick={() => setmobileNav(false)}>
+              &times;
+            </a>
+            <Link to="/" onClick={() => setmobileNav(false)}>
+              Home
+            </Link>
+            <Link to="/history" onClick={() => setmobileNav(false)}>
+              History
+            </Link>
+            <a onClick={() => setmobileNav(false)}>Abhay</a>
+            <a onClick={() => setmobileNav(false)}>Logout</a>
           </div>
         </div>
       </div>

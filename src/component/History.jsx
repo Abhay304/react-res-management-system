@@ -9,7 +9,7 @@ function History(props) {
     let updatedPaymentHistory = [];
     props.paymentHistory.forEach((historyItem) => {
       historyItem.forEach((item) => {
-        if (searchVal.length > 9 && item.dateTime.split(",")[0] == searchVal) {
+        if (searchVal.length > 9 && item.dateTime.split(",")[0] === searchVal) {
           updatedPaymentHistory.push(item);
         } else if (searchVal.length < 1) {
           updatedPaymentHistory.push(item);
@@ -28,7 +28,7 @@ function History(props) {
         value={searchVal}
         onChange={(e) => setSearchVal(e.target.value)}
       ></input>
-      <img className="search-logo" src={search}></img>
+      <img className="search-logo" src={search} alt="search-logo"></img>
       <table className="payment-history-table">
         <tbody>
           <tr>

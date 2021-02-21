@@ -19,7 +19,7 @@ function PaymentTypeModal(props) {
     }
     erroRef.current.innerText = "";
     const dateTimeStamp = new Date().toLocaleString();
-    summary.map((data) => {
+    summary.forEach((data) => {
       data.paymentType = paymentType;
       data.dateTime = dateTimeStamp;
     });
