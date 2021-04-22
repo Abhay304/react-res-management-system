@@ -44,7 +44,7 @@ export const foodState = [
   {
     typeof: "nonVeg",
     amount: 60,
-    name: "Chicken Chilly Boneless",
+    name: "Chicken Tikka",
     slug: "",
   },
   {

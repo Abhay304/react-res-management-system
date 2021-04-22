@@ -15,7 +15,7 @@ input[type="radio"] {
   cursor: pointer;
 }
 
-h3{
+h3 {
   font-size: 12px;
 }
 
@@ -39,10 +39,6 @@ hr {
   margin-top: 8px;
 }
 
-.hide{
-  display: none;
-}
-
 *,
 *:before,
 *:after {
@@ -55,10 +51,10 @@ body {
   margin: 0 auto;
 }
 
-.errorText{
+.errorText {
   color: red;
   font-size: 12px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   display: block;
   text-align: center;
   margin-bottom: 4px;
@@ -96,11 +92,12 @@ body {
   display: flex;
   list-style: none;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.header__nav__block ul li ,.header__nav__block ul li a {
+.header__nav__block ul li,
+.header__nav__block ul li a {
   cursor: pointer;
   font-size: 24px;
   font-weight: bold;
@@ -110,7 +107,7 @@ body {
 
 .header__nav__block ul li:hover {
   -webkit-transform: scale(0.98);
-          transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .app__wrapper {
@@ -122,7 +119,7 @@ body {
 .app__inner__wrapper {
   width: 86%;
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16);
-          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16);
   margin: 0 auto;
   background-color: #ffffffcf;
   border-radius: 4px;
@@ -153,8 +150,8 @@ body {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .app__inner__wrapper .app__menu__wrapper-active {
@@ -190,10 +187,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .app__inner__wrapper .app__food__wrapper .app__food__block {
@@ -203,7 +200,7 @@ body {
   display: flex;
   width: 70%;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   height: 100%;
 }
 
@@ -215,8 +212,8 @@ body {
   cursor: pointer;
   border-radius: 4px;
   -webkit-box-shadow: -19px 0px 20px 8px rgba(0, 0, 0, 0.16);
-          box-shadow: -19px 0px 20px 8px rgba(0, 0, 0, 0.16);
-  background: #F1F2EF;
+  box-shadow: -19px 0px 20px 8px rgba(0, 0, 0, 0.16);
+  background: #f1f2ef;
   margin-top: 10px;
   margin-right: 10px;
   height: 120px;
@@ -234,7 +231,7 @@ body {
 
 .app__inner__wrapper .app__food__wrapper .app__food__block .food__card:hover {
   -webkit-transform: scale(0.97);
-          transform: scale(0.97);
+  transform: scale(0.97);
   opacity: 0.7;
 }
 
@@ -251,28 +248,39 @@ body {
 }
 
 .app__inner__wrapper .app__food__wrapper .app__payment__block .payments li {
-  background-color: #F1F2EF;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: #f1f2ef;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   color: #3c3131;
   font-family: "Poppins", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   position: relative;
   padding: 10px;
   margin: 10px 0;
   font-size: 14px;
 }
 
-.app__inner__wrapper .app__food__wrapper .app__payment__block .payments li span:nth-child(1){
+.app__inner__wrapper
+  .app__food__wrapper
+  .app__payment__block
+  .payments
+  li
+  span:nth-child(1) {
   flex-basis: 60%;
 }
 
-.app__inner__wrapper .app__food__wrapper .app__payment__block .payments li .delete-btn {
+.app__inner__wrapper
+  .app__food__wrapper
+  .app__payment__block
+  .payments
+  li
+  .delete-btn {
   cursor: pointer;
   background-color: #e74c3c;
   border: 0;
@@ -285,9 +293,14 @@ body {
   right: -21px;
 }
 
-.app__inner__wrapper .app__food__wrapper .app__payment__block .payments li:hover .delete-btn {
+.app__inner__wrapper
+  .app__food__wrapper
+  .app__payment__block
+  .payments
+  li:hover
+  .delete-btn {
   -webkit-transform: scale(0.98);
-          transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .app__inner__wrapper .app__food__wrapper .app__payment__block p {
@@ -304,18 +317,19 @@ body {
   position: absolute;
   bottom: 0;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   left: 50%;
   width: 90%;
   height: 50px;
   padding: 15px;
   background-color: #fc9726;
   -webkit-box-shadow: -2px 6px 20px 1px #fc9726;
-          box-shadow: -2px 6px 20px 1px #fc9726;
+  box-shadow: -2px 6px 20px 1px #fc9726;
   color: #ffffff;
 }
 
-.app__inner__wrapper .app__food__wrapper .app__payment__block .pay-btn:hover, .app__inner__wrapper .app__food__wrapper .app__payment__block .pay-btn:active {
+.app__inner__wrapper .app__food__wrapper .app__payment__block .pay-btn:hover,
+.app__inner__wrapper .app__food__wrapper .app__payment__block .pay-btn:active {
   background-color: #ee8111;
 }
 
@@ -334,9 +348,9 @@ body {
   padding: 35px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.16);
-          box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.16);
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   position: fixed;
   top: 50%;
   left: 50%;
@@ -348,7 +362,7 @@ body {
   width: 150px;
   height: 50px;
   -webkit-box-shadow: -2px 6px 20px 1px #fc9726;
-          box-shadow: -2px 6px 20px 1px #fc9726;
+  box-shadow: -2px 6px 20px 1px #fc9726;
   color: #ffffff;
   background-color: #fc9726;
   margin: 0 auto;
@@ -368,7 +382,7 @@ body {
 
 .modal__inner__wrraper .close-btn:hover {
   -webkit-transform: scale(0.98);
-          transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .modal__title {
@@ -384,10 +398,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 20px;
   color: #3c3131;
@@ -399,8 +413,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .modal__payment__block img {
@@ -410,15 +424,15 @@ body {
 }
 
 button:disabled,
-button[disabled]{
+button[disabled] {
   cursor: no-drop;
   background-color: #fc972645 !important;
-  box-shadow:unset !important;
+  box-shadow: unset !important;
 }
 
 /* Table Css Not built from sass*/
 
-.history-table-block{
+.history-table-block {
   display: flex;
   justify-content: center;
 }
@@ -430,7 +444,7 @@ button[disabled]{
   top: 70%;
   box-shadow: 0 0 20px 0 rgb(0 0 0 / 16%);
 }
-.filter-history-table{
+.filter-history-table {
   position: absolute;
   top: 45%;
   right: 10%;
@@ -442,34 +456,39 @@ button[disabled]{
   font-size: 16px;
 }
 
-.filter-history-table::before{
-  content: '';
-  background: url('./assests/search.svg');
+.filter-history-table::before {
+  content: "";
+  background: url("./assests/search.svg");
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
   position: absolute;
 }
 
-.search-logo{
+.search-logo {
   position: absolute;
   top: 53%;
   right: 11%;
 }
-.search-logo:hover{
+.search-logo:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
 
-.payment-history-table td, .payment-history-table th {
+.payment-history-table td,
+.payment-history-table th {
   /* border: 1px solid #ddd; */
-  padding: 16px ;
+  padding: 16px;
   text-align: center;
 }
 
-.payment-history-table tr:nth-child(even){background-color: #f2f2f2;}
+.payment-history-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-.payment-history-table tr:hover {background-color: #ddd;}
+.payment-history-table tr:hover {
+  background-color: #ddd;
+}
 
 .payment-history-table th {
   padding-top: 12px;
@@ -487,24 +506,24 @@ button[disabled]{
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #ececec;
-  overflow-x: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  background-color: #23201e;
+  transition: width 1s;
   padding-top: 60px;
 }
 
-.header__nav__block_mobile a {
-  padding: 8px 8px 8px 8px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #81776d;;
-  display: block;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  text-align: center;
+.close-mobile-nav {
+  width: 0%;
+  transition: width 1s;
 }
 
+.header__nav__block_mobile a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fc9726bd;
+  display: block;
+  text-align: center;
+}
 
 .header__nav__block_mobile .closebtn {
   position: absolute;
@@ -534,43 +553,44 @@ button[disabled]{
 }
 
 @media screen and (min-width: 880px) {
-.header__nav__block_mobile{
-  display: none;
-}
+  .header__nav__block_mobile {
+    display: none;
+  }
 }
 @media screen and (max-width: 600px) {
-
   .open-mobile-nav {
     display: block;
   }
   .header__nav__block {
     display: none;
   }
-  .app__food__wrapper{
+  .app__food__wrapper {
     flex-direction: column;
   }
-  .app__food__block{
+  .app__food__block {
     width: 100% !important;
   }
 
-  .app__payment__block{
+  .app__payment__block {
     width: 100% !important;
   }
-  .app__inner__wrapper .app__menu__wrapper{
+  .app__inner__wrapper .app__menu__wrapper {
     margin-top: 10px;
     width: 100% !important;
   }
-  .food__card{
+  .food__card {
     width: 118px !important;
   }
 
-  .app__inner__wrapper{
+  .app__inner__wrapper {
     padding: 25px !important;
   }
-  .header__nav__block ul li, .header__nav__block ul li a{
+  .header__nav__block ul li,
+  .header__nav__block ul li a {
     font-size: 18px;
   }
-  .payment-history-table td, .payment-history-table th {
+  .payment-history-table td,
+  .payment-history-table th {
     padding: 14px 0px;
   }
 }
