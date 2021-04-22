@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-res-management-system/static/css/main.e19f3717.chunk.css",
-    "main.js": "/react-res-management-system/static/js/main.986813ce.chunk.js",
-    "main.js.map": "/react-res-management-system/static/js/main.986813ce.chunk.js.map",
+    "main.css": "/react-res-management-system/static/css/main.42894be3.chunk.css",
+    "main.js": "/react-res-management-system/static/js/main.b3926cdd.chunk.js",
+    "main.js.map": "/react-res-management-system/static/js/main.b3926cdd.chunk.js.map",
     "runtime-main.js": "/react-res-management-system/static/js/runtime-main.aeed6f48.js",
     "runtime-main.js.map": "/react-res-management-system/static/js/runtime-main.aeed6f48.js.map",
-    "static/js/2.69ea814c.chunk.js": "/react-res-management-system/static/js/2.69ea814c.chunk.js",
-    "static/js/2.69ea814c.chunk.js.map": "/react-res-management-system/static/js/2.69ea814c.chunk.js.map",
+    "static/js/2.805250d3.chunk.js": "/react-res-management-system/static/js/2.805250d3.chunk.js",
+    "static/js/2.805250d3.chunk.js.map": "/react-res-management-system/static/js/2.805250d3.chunk.js.map",
     "static/js/3.db18acd1.chunk.js": "/react-res-management-system/static/js/3.db18acd1.chunk.js",
     "static/js/3.db18acd1.chunk.js.map": "/react-res-management-system/static/js/3.db18acd1.chunk.js.map",
     "index.html": "/react-res-management-system/index.html",
-    "static/css/main.e19f3717.chunk.css.map": "/react-res-management-system/static/css/main.e19f3717.chunk.css.map",
-    "static/js/2.69ea814c.chunk.js.LICENSE.txt": "/react-res-management-system/static/js/2.69ea814c.chunk.js.LICENSE.txt",
+    "static/css/main.42894be3.chunk.css.map": "/react-res-management-system/static/css/main.42894be3.chunk.css.map",
+    "static/js/2.805250d3.chunk.js.LICENSE.txt": "/react-res-management-system/static/js/2.805250d3.chunk.js.LICENSE.txt",
     "static/media/Gpay.9aec8ab1.png": "/react-res-management-system/static/media/Gpay.9aec8ab1.png",
     "static/media/Phone-Pe-logo.3022ba50.png": "/react-res-management-system/static/media/Phone-Pe-logo.3022ba50.png",
     "static/media/cash.a0de5261.svg": "/react-res-management-system/static/media/cash.a0de5261.svg",
@@ -24,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.aeed6f48.js",
-    "static/js/2.69ea814c.chunk.js",
-    "static/css/main.e19f3717.chunk.css",
-    "static/js/main.986813ce.chunk.js"
+    "static/js/2.805250d3.chunk.js",
+    "static/css/main.42894be3.chunk.css",
+    "static/js/main.b3926cdd.chunk.js"
   ]
 }
