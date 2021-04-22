@@ -23,7 +23,7 @@ function PaymentTypeModal(props) {
       data.paymentType = paymentType;
       data.dateTime = dateTimeStamp;
     });
-    console.log(summary);
+    // console.log(summary);
     props.addpayment(summary);
     props.clearItem();
     toggleModal();

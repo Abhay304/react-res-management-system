@@ -211,7 +211,7 @@ body {
   font-family: "Poppins", sans-serif;
   height: inherit;
   width: 124px;
-  padding: 15px;
+  padding: 10px;
   cursor: pointer;
   border-radius: 4px;
   -webkit-box-shadow: -19px 0px 20px 8px rgba(0, 0, 0, 0.16);
@@ -266,6 +266,10 @@ body {
   padding: 10px;
   margin: 10px 0;
   font-size: 14px;
+}
+
+.app__inner__wrapper .app__food__wrapper .app__payment__block .payments li span:nth-child(1){
+  flex-basis: 60%;
 }
 
 .app__inner__wrapper .app__food__wrapper .app__payment__block .payments li .delete-btn {

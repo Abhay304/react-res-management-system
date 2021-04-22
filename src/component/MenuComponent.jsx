@@ -1,11 +1,15 @@
 import React, { useState } from "react";
-import { connect } from "react-redux";
+import { connect, useDispatch, useSelector } from "react-redux";
 import NonVegComponent from "./NonVegComponent";
 import VegComponent from "./VegComponent";
 import vegLogo from "../assests/lettuce.svg";
 import nonVegLogo from "../assests/nonVeg.svg";
 import Payment from "./Payment";
 function MenuComponent(props) {
+  //Using Use Selector
+  // const newstate = useSelector((state) => state.historyDetails.totalAmount);
+  // console.log(newstate);
+
   localStorage.setItem("historyJson", JSON.stringify(props.paymentHistory));
   localStorage.setItem("totalAmount", JSON.stringify(props.totalAmount));
   const [foodType, setFoodType] = useState("nonVeg");
