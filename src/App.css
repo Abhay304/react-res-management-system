@@ -500,20 +500,21 @@ button[disabled] {
 }
 
 .header__nav__block_mobile {
-  height: 100%;
   width: 60%;
+}
+.nav-open-close {
+  transition: width 1s;
+  height: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
   background-color: #23201e;
-  transition: width 1s;
   padding-top: 60px;
 }
 
 .close-mobile-nav {
-  width: 0%;
-  transition: width 1s;
+  width: 0;
 }
 
 .header__nav__block_mobile a {

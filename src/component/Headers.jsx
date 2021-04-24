@@ -37,9 +37,9 @@ function Headers() {
             &#9776; open
           </span>
           <div
-            className={
+            className={`nav-open-close ${
               mobileNav ? "header__nav__block_mobile" : "close-mobile-nav"
-            }
+            }`}
           >
             {mobileNav && (
               <>
